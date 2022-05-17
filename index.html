@@ -4,21 +4,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="nft-preview.css">
   <title>NFT preview card component</title>
 </head>
-<body>
-  <figure>
-    
-  </figure>
+<body class="body">
+  <main class="nft-box">
+    <figure class="nft-figure-box1">
+      <img class="nft-figure1" src="./images/image-equilibrium.jpg" alt="equilibrium image" />
+      <div class="nft-figure-box2"><img src="./images/icon-view.svg" alt="eye image" /></div>
+      <div class="color-overlay"></div>
+    </figure>
+    <header class="nft-header">Equilibrium #3429</header>
 
-  <header>Equilibrium #3429</header>
+    <p class="nft-content">Our Equilibrium collection promotes balance and calm.</p>
 
-  <p>Our Equilibrium collection promotes balance and calm.</p>
+    <div class="nft-price"><img class="nft-icon" src="./images/icon-ethereum.svg" alt="ethereum"/>0.041 ETH <time class="nft-time"><img class="nft-icon" src="./images/icon-clock.svg" alt="clock"/>3 days left</time></div>
 
-  <p>0.041 ETH</p>
-  <time>3 days left</time>
+    <hr class="nft-line">
 
-  <footer>Creation of Jules Wyvern</footer>
-
+    <footer class="nft-author"><img class="nft-author-icon" src="./images/image-avatar.png" alt="avatar"/>Creation of <span class="nft-author-name">Jules Wyvern</span></footer>
+  </main>
 </body>
 </html>

@@ -1,0 +1,138 @@
+.body {
+    background-color: hsl(217, 54%, 11%);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Overpass', sans-serif;
+}
+
+.nft-box {
+    background-color: hsl(216, 50%, 16%);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 17%;
+    border-radius: 15px;
+}
+
+.nft-figure-box1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 18px 0;
+}
+
+.color-overlay {
+    background-color: hsl(178, 100%, 50%);
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+}
+
+.nft-figure-box1:hover .nft-figure1 {
+    opacity: 0.3;
+}
+
+.nft-figure-box1:hover .color-overlay {
+    opacity: 0.3;
+}
+
+.nft-figure-box1:hover .nft-figure-box2 {
+    opacity: 1;
+}
+
+.nft-figure1 {
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+    opacity: 1;
+    transition: .5s ease;
+}
+
+.nft-figure-box2 {
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+    opacity: 0;
+    transition: .5s ease;
+    position: absolute;
+    transform: translate(43%, 43%);
+    z-index: 1;
+}
+
+.nft-header {
+    font-size: 22px;
+    font-weight: 1000;
+    color: hsl(0, 0%, 100%);
+}
+
+.nft-header:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+.nft-content {
+    color: hsl(215, 51%, 70%);
+    font-size: 18px;
+}
+
+.nft-price {
+    color:hsl(178, 100%, 50%);
+    font-size: 18px;
+    white-space:nowrap;
+}
+
+.nft-time {
+    margin-left: 28%;
+    display: inline-block; 
+    color: hsl(215, 51%, 70%);
+    font-size: 18px;
+}
+
+.nft-line {
+    width: 100%;
+    border-color: hsl(215, 32%, 27%);
+}
+
+.nft-author {
+    color: hsl(215, 51%, 70%);
+    font-size: 18px;
+    margin: 18px 0;
+}
+
+.nft-author-name {
+    color: hsl(0, 0%, 100%);
+    font-size: 18px;
+}
+
+.nft-author-name:hover {
+    color:  hsl(178, 100%, 50%);
+}
+
+.nft-icon {
+    float: left;
+    margin-right: 10px;
+}
+
+.nft-author-icon {
+    width: 32px;
+    height: 32px;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+
+@media (max-width: 1440px) {
+    .nft-box {
+        width: 21%;
+    }
+}
+
+@media (max-width: 375px) {
+    .nft-box {
+        width: 80%;
+    }
+}

@@ -123,6 +123,8 @@
     height: 32px;
     vertical-align: middle;
     margin-right: 20px;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
 }
 
 @media (max-width: 1440px) {
